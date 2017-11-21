@@ -23,3 +23,13 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+/* Faker to use in controller
+use Faker\Factory as Faker;
+
+$faker = Faker::create();
+for ($i=0; $i < 10; $i++) { 
+    echo $faker->name," <br> ",$faker->email,"<hr>";
+}
+
+*/

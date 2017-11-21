@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use Illuminate\Http\Request;
 use Session;
+use Faker\Factory as Faker;
 
 class PostController extends Controller
 {
@@ -15,7 +16,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $faker = Faker::create();
+        for ($i=0; $i < 10; $i++) { 
+            echo $faker->name," <br> ",$faker->email,"<hr>";
+        }
     }
 
     /**
@@ -25,6 +29,7 @@ class PostController extends Controller
      */
     public function create()
     {
+        
         return view('posts.create');
     }
 
