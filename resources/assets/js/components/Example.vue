@@ -6,7 +6,7 @@
                     <div class="panel-heading">Example Component</div>
 
                     <div class="panel-body">
-                        I'm an example component!
+                        I'm an example component!!
                     </div>
                 </div>
             </div>
@@ -18,6 +18,11 @@
     export default {
         mounted() {
             console.log('Component mounted.')
+        },
+        created(){
+            Echo.channel('pusherChannel').listen('PusherTestEvent', (e) => {
+                console.log(e);
+            });
         }
     }
 </script>

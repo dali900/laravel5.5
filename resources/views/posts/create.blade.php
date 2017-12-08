@@ -21,7 +21,11 @@
 
 				  <button type="submit" class="btn btn-default">Submit</button>		
 		  </form>
+		  <div id="app">
+		  	<example></example>
+		  </div>
 		</div>
 	</div>
 </div>
+<script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
 @endsection

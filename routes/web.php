@@ -15,3 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('posts', 'PostController'); 
+
+Route::get('pushertest/send', "PusherTestController@send");
+Route::get('pushertest/get', "PusherTestController@get");
