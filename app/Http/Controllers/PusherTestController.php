@@ -21,4 +21,4 @@ class PusherTestController extends Controller
     	echo "Pusher/Get";
     	return view('tests.pusher');
     }
-}
+} 
